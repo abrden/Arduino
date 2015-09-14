@@ -23,7 +23,7 @@ void loop() {
   Serial.print("potentiometer: ");
   Serial.print(potentiometerValue);
   
-  // Change value between 0-1023 to values between 0-179
+  // Change value between 0-1023 to value between 0-179
   angle = map(potentiometerValue, 0, 1023, 0, 179);
   
   Serial.print(", angle: ");
